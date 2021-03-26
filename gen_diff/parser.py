@@ -10,6 +10,7 @@ def create_parser():
     )
     parser.add_argument("first_file", nargs="?")
     parser.add_argument("second_file", nargs="?")
+    parser.add_argument("-f", "--format", help="set format of output")
 
     return parser
 

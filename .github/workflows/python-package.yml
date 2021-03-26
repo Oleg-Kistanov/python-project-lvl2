@@ -1,4 +1,4 @@
-name: Python-package-2
+name: linter-check
 
 on: push
     
