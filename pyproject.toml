@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Oleg Kistanov <olegkistanov95@gmail.com>"]
 packages = [
-  { include = "gen_diff" },
+  { include = "gendiff" },
 ]
 
 
@@ -19,4 +19,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-gendiff = "gen_diff.scripts.main_script:main"
+gendiff = "gendiff.scripts.scenario:main"
