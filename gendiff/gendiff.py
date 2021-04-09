@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
-import json
+from gendiff.parser import parser
 
 
-def generate_diff(file_path1, file_path2):
-    file_1 = json.load(open(file_path1))
-    file_2 = json.load(open(file_path2))
+def generate_diff(file_path_1, file_path_2):
+    file_1, file_2 = parser(file_path_1, file_path_2)
     old_keys = list(file_1.keys())
     new_keys = list(file_2.keys())
     shared_keys = sorted(list(set(old_keys + new_keys)))
